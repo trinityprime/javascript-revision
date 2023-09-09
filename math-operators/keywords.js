@@ -31,5 +31,5 @@ console.log(mod);
 
 // Exponential
 
-expo = 9 ** 2
-console.log(expo)
+expo = 9 ** 2;
+console.log(expo);
