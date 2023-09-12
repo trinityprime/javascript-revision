@@ -6,7 +6,6 @@ const object = () => {
 };
 object();
 
-
 //  ex2
 
 const add = (num1, num2) => {

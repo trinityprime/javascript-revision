@@ -17,20 +17,20 @@ console.log(animals); // cow, sheep, horse, moose
 
 //  ex3 (.pop)
 
-const brand = ["apple", "google", "samsung"]
-brand.pop(2)
+const brand = ["apple", "google", "samsung"];
+brand.pop(2);
 
-console.log(brand) // apple, google
+console.log(brand); // apple, google
 
 //  ex4
 
-const weapon = ["sword", "gunlance", "bow"]
-weapon.unshift("bowgun")
+const weapon = ["sword", "gunlance", "bow"];
+weapon.unshift("bowgun");
 
-console.log(weapon) // bowgun, sword, gunlance, bow
+console.log(weapon); // bowgun, sword, gunlance, bow
 
 // ex5
 
-weapon.shift()
+weapon.shift();
 
-console.log(weapon) // sword, gunlance, bow
+console.log(weapon); // sword, gunlance, bow

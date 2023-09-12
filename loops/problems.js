@@ -1,5 +1,5 @@
 // while loops
-//  Q1 
+//  Q1
 
 i = 5;
 

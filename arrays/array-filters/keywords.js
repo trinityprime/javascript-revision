@@ -22,5 +22,5 @@ const evenNumbers = nums.filter((num) => {
   }
 });
 
-console.log(nums)
-console.log(evenNumbers)
+console.log(nums);
+console.log(evenNumbers);

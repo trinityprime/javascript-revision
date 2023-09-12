@@ -14,5 +14,5 @@ console.log(false || false);
 
 console.log("--------------");
 
-console.log(!true)
-console.log(!false)
+console.log(!true);
+console.log(!false);
