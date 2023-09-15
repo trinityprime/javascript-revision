@@ -1,7 +1,7 @@
 // while loops
 //  Q1
 
-i = 5;
+let i = 5;
 
 while (i <= 10) {
   console.log(i);
@@ -11,7 +11,7 @@ while (i <= 10) {
 //  Q2
 
 let loggedIn = false;
-incorrectLog = 0;
+let incorrectLog = 0;
 
 while (loggedIn === false) {
   console.log("Incorrect login details.");
