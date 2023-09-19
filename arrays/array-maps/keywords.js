@@ -9,6 +9,7 @@ const bigCities = cities.map((city) => {
   return city.toUpperCase();
 });
 
+console.log(cities)
 console.log(bigCities);
 
 //  ex2
