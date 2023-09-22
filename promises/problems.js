@@ -36,7 +36,7 @@ newLoader
     console.log(fail);
   });
 
-Q3;
+//  Q3;
 
 console.log("Program started!");
 console.log("Program in progress...");
@@ -113,7 +113,7 @@ myPromise
     console.log(val);
   });
 
-Q5;
+//  Q5;
 
 console.log("Printing numbers:");
 
