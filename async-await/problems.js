@@ -1,92 +1,92 @@
-// //  Q1
+//  Q1
 
-// const fetchPokemon = () => {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       resolve({ data: { name: "Pikachu", power: 20 } });
-//     }, 2000);
-//   });
-// };
+const fetchPokemon = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve({ data: { name: "Pikachu", power: 20 } });
+    }, 2000);
+  });
+};
 
-// const getPokemon = async () => {
-//   try {
-//     const result = await fetchPokemon();
-//     console.log("All clear!");
-//     console.log(result);
-//   } catch (error) {
-//     console.log("Danger! Danger!");
-//     console.log(error);
-//   }
-// };
+const getPokemon = async () => {
+  try {
+    const result = await fetchPokemon();
+    console.log("All clear!");
+    console.log(result);
+  } catch (error) {
+    console.log("Danger! Danger!");
+    console.log(error);
+  }
+};
 
-// console.log("Start");
-// getPokemon();
-// console.log("End.");
+console.log("Start");
+getPokemon();
+console.log("End.");
 
-// //  Q2
+//  Q2
 
-// const fetchUser = () => {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       resolve({ data: { user: "Monkey", admin: false } });
-//     }, 3000);
-//   });
-// };
+const fetchUser = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve({ data: { user: "Monkey", admin: false } });
+    }, 3000);
+  });
+};
 
-// const login = (object) => {
-//   if (object.admin == true) {
-//     console.log("Logged in!");
-//   } else {
-//     console.log("Loser.");
-//   }
-// };
+const login = (object) => {
+  if (object.admin == true) {
+    console.log("Logged in!");
+  } else {
+    console.log("Loser.");
+  }
+};
 
-// console.log("Program starting...");
+console.log("Program starting...");
 
-// const progStart = async () => {
-//   const result = await fetchUser();
-//   console.log(result);
-//   login(result.data);
-// };
+const progStart = async () => {
+  const result = await fetchUser();
+  console.log(result);
+  login(result.data);
+};
 
-// progStart();
-// console.log("Program complete!");
+progStart();
+console.log("Program complete!");
 
-// //  Q3
+//  Q3
 
-// const fetchFast = () => {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       resolve("Fast Done!");
-//     }, 2000);
-//   });
-// };
+const fetchFast = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("Fast Done!");
+    }, 2000);
+  });
+};
 
-// const fetchSlow = () => {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       resolve("Slow Done!");
-//     }, 3000);
-//   });
-// };
+const fetchSlow = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("Slow Done!");
+    }, 3000);
+  });
+};
 
-// console.log("Starting...");
+console.log("Starting...");
 
-// const firstTime = new Date();
+const firstTime = new Date();
 
-// const fetchAll = async () => {
-//   const fast = await fetchFast();
-//   const slow = await fetchSlow();
-//   const fastSlow = await Promise.all([fast, slow]);
-//   console.log(fastSlow);
+const fetchAll = async () => {
+  const fast = await fetchFast();
+  const slow = await fetchSlow();
+  const fastSlow = await Promise.all([fast, slow]);
+  console.log(fastSlow);
 
-//   const secondTime = new Date();
-//   const timeElapsed = secondTime - firstTime;
-//   console.log(timeElapsed, "ms");
-// };
+  const secondTime = new Date();
+  const timeElapsed = secondTime - firstTime;
+  console.log(timeElapsed, "ms");
+};
 
-// fetchAll();
-// console.log("Done!");
+fetchAll();
+console.log("Done!");
 
 //  Q4
 
