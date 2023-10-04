@@ -94,7 +94,7 @@ const getCandy = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve({ candy: "sour keys", quantity: 10 });
-      console.log("Candy..")
+      console.log("Candy..");
     }, 2000);
   });
 };
@@ -103,7 +103,7 @@ const sellCandy = (object) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(25 * object.quantity);
-      console.log("Sold!")
+      console.log("Sold!");
     }, 3000);
   });
 };
