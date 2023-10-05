@@ -1,4 +1,4 @@
-// spread turns everything into an array
+// spread turns everything into an array 
 
 // only makes copies of primitive types, not reference types. 
 // => means that changes in original for reference types will also happen in spread vice versa
