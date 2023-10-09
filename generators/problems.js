@@ -59,3 +59,32 @@ console.log("Third:");
 for (const value of rangeGenerator2) {
   console.log(value);
 }
+
+//  Q4
+
+const getRandomNumber = function* () {
+  let i = 0;
+  while (i < 5) {
+    yield Math.floor(Math.random() * 10) + 1;
+    i++;
+  }
+};
+
+const charList = function* () {
+  const characters = ["Geralt", "Ciri", "Yennefer", "Triss", "Keira"];
+  while (true) {
+    const randCharIndex = Math.floor(Math.random() * characters.length);
+    const randChar = characters[randCharIndex];
+    characters.splice(randCharIndex, 1);
+    yield randChar;
+  }
+};
+
+const charGenerator = charList();
+const randomNumGen = getRandomNumber();
+
+for (let i = 0; i < 5; i++) {
+  const character = charGenerator.next().value;
+  const randomNumber = randomNumGen.next().value;
+  console.log(`${randomNumber} ${character}`);
+}
