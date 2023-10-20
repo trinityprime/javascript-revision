@@ -38,7 +38,8 @@ const book = {
   movie: true,
 };
 
-book[Symbol.iterator] = function* () { // iterate through object
+book[Symbol.iterator] = function* () {
+  // iterate through object
   const entries = Object.entries(book);
   for (const entry of entries) {
     yield entry;
@@ -60,7 +61,8 @@ const newBook = {
   movie: true,
 };
 
-newBook[Symbol.asyncIterator] = async function* () { // async await 
+newBook[Symbol.asyncIterator] = async function* () {
+  // async await
   const entries = Object.entries(newBook);
   for (const entry of entries) {
     yield new Promise((resolve, reject) => {
